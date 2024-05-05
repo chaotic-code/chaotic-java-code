@@ -1,0 +1,28 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/DEV_TMS
+        username: postgres
+        password: Zoro11*
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+          
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+logging:
+    level:
+        org:
+            springframework:
+                boot: DEBUG
+          
