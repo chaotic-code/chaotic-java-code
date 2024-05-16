@@ -9,8 +9,17 @@
 	<name>parent-modules</name>
 	<modules>
 		<module>prometheus</module>
+		<module>authorization</module>
 	</modules>
 	<properties>
 		<spring.boot.version>3.1.5</spring.boot.version>
 	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<version>${spring.boot.version}</version>
+		</dependency>
+	</dependencies>
 </project>

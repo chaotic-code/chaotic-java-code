@@ -13,7 +13,6 @@ public class PrometheusController {
 	@GetMapping("/getStatus")
 	@Timed(value = "getStatusAPI.response.time", description = "Time taken to process getStatus API request")
 	public String getStatus() throws InterruptedException {
-		Thread th = new Thread();
 		Random random = new Random();
 		
 		int min = 5000;
