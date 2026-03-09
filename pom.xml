@@ -11,6 +11,7 @@
 		<module>prometheus</module>
 		<module>authorization</module>
 		<module>MongoDb</module>
+		<module>comicbot</module>
 	</modules>
 	<properties>
 		<spring.boot.version>3.1.5</spring.boot.version>
